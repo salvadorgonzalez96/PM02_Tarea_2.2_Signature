@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SignaturesApp.View.ShowSignatureInformation"
+             Title="Tarea 2.2 PM02">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Información de Firma" HorizontalOptions="Center" Margin="0" FontSize="Title" TextColor="Black"></Label>
+                    
+
+                    <Image x:Name="imageSignature" Grid.Row="0" Grid.Column="0" HeightRequest="250" WidthRequest="250" Margin="50" VerticalOptions="Start" HorizontalOptions="Center"/>
+
+                    <Label Text="Nombre:" Grid.Row="1" Grid.Column="0" FontAttributes="Bold" Margin="5" TextColor="Black"></Label>
+                    <Label x:Name="name" Grid.Row="1" Grid.Column="0" FontAttributes="Bold" HorizontalOptions="Center"></Label>
+                    <Label Text="Descripcion:" Grid.Row="2" Grid.Column="0" FontAttributes="Bold" Margin="5" TextColor="Black"></Label>
+                    <Label x:Name="description" Grid.Row="2" Grid.Column="0" FontAttributes="Bold" HorizontalOptions="Center"></Label>
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

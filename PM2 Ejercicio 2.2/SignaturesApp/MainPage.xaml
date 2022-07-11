@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:forms="clr-namespace:SignaturePad.Forms;assembly=SignaturePad.Forms"
+             x:Class="SignaturesApp.MainPage"
+             Title="Tarea 2.2 PM2">
+
+    <StackLayout BackgroundColor="SkyBlue">
+        <forms:SignaturePadView x:Name="PadView" StrokeColor="Black"
+                            BackgroundColor="LightGray"
+                            StrokeWidth="2"
+                            WidthRequest="280"
+                            HeightRequest="360"/>
+
+        <Entry x:Name="name" Placeholder="Escriba su Nombre" Keyboard="Text" TextColor="Black"></Entry>
+        <Entry x:Name="description" Placeholder="Escriba alguna Descripcion" Keyboard="Text" TextColor="Black"></Entry>
+        
+        <Button Text="Guardar datos" Clicked="SaveButton_Clicked"></Button>
+        <Button Text="Limpiar" Clicked="ClearButton_Clicked"></Button>
+        <Line/>
+        <Label Text="Mostrar Datos" HorizontalOptions="Center" FontSize="20" FontAttributes="Bold" TextColor="Black"/>
+        <Button Text="Lista de Firmas" Clicked="ViewSignaturesButton_Clicked"></Button>
+    </StackLayout>
+    
+</ContentPage>
